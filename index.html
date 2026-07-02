@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="conteudo">
+        <div class="conteudo-titulo">
+            <img src="unlock.svg" alt="cadeado fechado">
+            <h2 class="titulo-principal">Gerador de senhas</h2>
+            <h3 class="titulo-secondary">Gere instantaneamente uma senha aleatoria e segura</h3>
+        </div>
+        <div class="conteudo-senha">
+            <label for="senha">Senha</label>
+            <input name="senha" type="text" id="campo-senha">
+        </div>
+        <div class="parametro">
+            <h3 class="parametro-titulo">Personalize sua senha</h3>
+<div class="parametro-coluna__senha">
+    
+    
+    <div class="parametro-senha">
+        <h4 class="parametro-senha__titulo">Numero de caracteres</h4>
+        <div class="parametro-senha-botoes">
+            <button type="button" id="btn-diminuir" class="parametro-senha__botao">-</button>
+            <p id="tamanho-senha" class="parametro-senha__texto">12</p>
+            <button type="button" id="btn-aumentar" class="parametro-senha__botao">+</button>
+        </div>
+    </div>
+
+    
+    <div class="parametro-senha">
+        <h4 class="parametro-senha__titulo">Caracteristicas da senha</h4>
+        <div class="parametro-senha__opcoes">
+            
+            <label class="parametro-senha__label">
+                <input type="checkbox" id="chk-maiusculas" class="parametro-senha__checkbox" checked>
+                Incluir Letras Maiusculas
+            </label>
+            <label class="parametro-senha__label">
+                <input type="checkbox" id="chk-numeros" class="parametro-senha__checkbox" checked>
+                Incluir Numeros
+            </label>
+            <label class="parametro-senha__label">
+                <input type="checkbox" id="chk-simbolos" class="parametro-senha__checkbox">
+                Incluir Simbolos
+            </label>
+        </div>
+    </div>
+
+    
+    <div class="parametro-senha">
+        <h4 class="parametro-senha__titulo">Forca da senha</h4>
+        
+        <div id="forca-indicador" class="parametro-senha__forca-barra"></div>
+        <p id="forca-texto" class="parametro-senha__texto-forca">Media</p>
+    </div>
+
+</div>
